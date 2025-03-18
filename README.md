@@ -1,10 +1,11 @@
 # 🌟 Projecs
 
-## 📌Gives ready made project
+## 📌 Ready projects
 
+## 🎨 Demo Preview (HTML & CSS)
+Here is a simple **HTML & CSS** snippet from the project:
 
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
