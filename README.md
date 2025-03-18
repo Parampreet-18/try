@@ -11,32 +11,81 @@ Here is a simple **HTML & CSS** snippet from the project:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Webpage</title>
+    <title>Responsive Design</title>
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
         }
-        h1 {
-            color: #3498db;
+
+        body {
+            background-color: #f5f5f5;
         }
-        .btn {
-            background-color: #2ecc71;
+
+        .navbar {
+            background: #333;
             color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
+            padding: 15px;
+            text-align: center;
         }
-        .btn:hover {
-            background-color: #27ae60;
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background: #6200ea;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 40vh;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Project 🚀</h1>
-    <button class="btn">Click Me!</button>
+    <div class="navbar">Responsive Navbar</div>
+    <div class="hero">
+        <h1>Welcome to Our Responsive Website</h1>
+    </div>
+    <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
 </body>
 </html>
+
