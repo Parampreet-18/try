@@ -1,7 +1,6 @@
 # 🌟 Projecs
 
-## 📌 Description
-Gives ready made project
+## 📌Gives ready made project
 
 
 
